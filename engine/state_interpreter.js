@@ -16,7 +16,13 @@ const StepInterpreter = async (currentState, payload, options, Interpreter) => {
 
     switch(currentState.type) {
       case 'task':
-        if(currentState.result) return currentState.result;
+        if(currentState.result) {
+          let res = {
+            result: currentState.result
+          }
+          if(currentState.next) res.nextState = currentState.next;
+          return res;
+        }
         if(currentState.resolver) {
           let result = await Task(currentState.resolver, payload, options);
           return {
