@@ -59,7 +59,9 @@ exports.handler = async (payload) => {
 ```
 
 
-## To exec from CLI
+## CLI
+
+To exec from cli tool
 
 ```terminal
 node cli/exec.js task01
