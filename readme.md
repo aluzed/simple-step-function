@@ -12,7 +12,8 @@ Here is a simple step function-like framework that you can host. Each step gener
 See examples in jobs folder.
 
 
-## Config file
+## Config file
+
 
 In `jobs` folder, create a subfolder with a `config.json` file : 
 
