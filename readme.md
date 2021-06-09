@@ -11,6 +11,7 @@ Here is a simple step function-like framework that you can host. Each step gener
 
 See examples in jobs folder.
 
+
 ## Config file
 
 In `jobs` folder, create a subfolder with a `config.json` file : 
@@ -32,7 +33,8 @@ In `jobs` folder, create a subfolder with a `config.json` file :
 }
 ```
 
-## Handler file
+
+## Resolver file
 
 In your custom job folder (ex : `jobs/myjob`), create a  `functions` folder, then add your js script : 
 
@@ -55,6 +57,7 @@ exports.handler = async (payload) => {
   }
 }
 ```
+
 
 ## To exec from CLI
 
