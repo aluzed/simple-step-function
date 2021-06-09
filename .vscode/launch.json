@@ -1,0 +1,68 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Exec task01",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "args": [
+        "task01"
+      ],
+      "program": "${workspaceFolder}/cli/exec.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Exec task02",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "args": [
+        "task02"
+      ],
+      "program": "${workspaceFolder}/cli/exec.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Exec choice01",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "args": [
+        "choice01"
+      ],
+      "program": "${workspaceFolder}/cli/exec.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Exec choice02",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "args": [
+        "choice02"
+      ],
+      "program": "${workspaceFolder}/cli/exec.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Timeout",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "args": [
+        "timeout"
+      ],
+      "program": "${workspaceFolder}/cli/exec.js"
+    }
+  ]
+}

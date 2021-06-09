@@ -1,0 +1,57 @@
+{
+  "startAt": "parallel_step",
+  "states": {
+    "parallel_step":{
+      "type": "parallel",
+      "branches": [
+        {
+          "startAt": "a",
+          "states": {
+            "a": {
+              "type": "task",
+              "resolver": "parallel02::a"
+            }
+          }
+        },
+        {
+          "startAt": "b",
+          "states": {
+            "b": {
+              "type": "task",
+              "resolver": "parallel02::b",
+              "next": "add_or_sub"
+            },
+            "add_or_sub": {
+              "type": "choice",
+              "choices": [
+                {
+                  "variable": "$.random",
+                  "operator": ">",
+                  "value": 50,
+                  "next": "sub"
+                }, 
+                {
+                  "else": true,
+                  "next": "add"
+                }
+              ]
+            },
+            "sub": {
+              "type": "task",
+              "resolver": "parallel02::sub"
+            },
+            "add": {
+              "type": "task",
+              "resolver": "parallel02::add"
+            }
+          }
+        }
+      ],
+      "next": "result"
+    },
+    "result":{
+      "type": "task",
+      "resolver": "parallel02::result"
+    }
+  }
+}

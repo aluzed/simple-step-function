@@ -1,0 +1,41 @@
+{
+  "startAt": "get_age_and_licence",
+  "states": {
+    "get_age_and_licence": {
+      "type": "task",
+      "resolver": "choice02::get_age_and_licence",
+      "next": "can_drive"
+    },
+    "can_drive":{
+      "type": "choice",
+      "choices": [
+        {
+          "and": [
+            {
+              "variable": "$.age",
+              "operator": ">=",
+              "value": 18
+            },
+            {
+              "variable": "$.driver_licence",
+              "operator": "isTrue"
+            }
+          ],
+          "next": "is_driver"
+        },
+        {
+          "else": true,
+          "next": "is_not_driver"
+        }
+      ]
+    },
+    "is_driver":{
+      "type": "task",
+      "resolver": "choice02::is_driver"
+    },
+    "is_not_driver":{
+      "type": "task",
+      "resolver": "choice02::is_not_driver"
+    }
+  }
+}

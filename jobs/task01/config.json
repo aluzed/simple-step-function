@@ -1,0 +1,14 @@
+{
+  "startAt": "first_step",
+  "states": {
+    "first_step":{
+      "type": "task",
+      "result": "first",
+      "next": "second_step"
+    },
+    "second_step":{
+      "type": "task",
+      "result": "second"
+    }
+  }
+}

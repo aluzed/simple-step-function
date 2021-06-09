@@ -1,0 +1,33 @@
+{
+  "startAt": "parallel_step",
+  "states": {
+    "parallel_step":{
+      "type": "parallel",
+      "branches": [
+        {
+          "startAt": "a",
+          "states": {
+            "a": {
+              "type": "task",
+              "resolver": "parallel01::a"
+            }
+          }
+        },
+        {
+          "startAt": "b",
+          "states": {
+            "b": {
+              "type": "task",
+              "resolver": "parallel01::b"
+            }
+          }
+        }
+      ],
+      "next": "result"
+    },
+    "result":{
+      "type": "task",
+      "resolver": "parallel01::result"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "startAt": "get_random_age",
+  "states": {
+    "get_random_age": {
+      "type": "task",
+      "resolver": "choice01::check_age",
+      "next": "check_age"
+    },
+    "check_age":{
+      "type": "choice",
+      "choices": [
+        {
+          "variable": "$.age",
+          "operator": ">=",
+          "value": 18,
+          "next": "is_adult"
+        },
+        {
+          "variable": "$.age",
+          "operator": "<",
+          "value": 18,
+          "next": "is_minor"
+        }
+      ]
+    },
+    "is_minor":{
+      "type": "task",
+      "resolver": "choice01::minor"
+    },
+    "is_adult":{
+      "type": "task",
+      "resolver": "choice01::adult"
+    }
+  }
+}
