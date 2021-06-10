@@ -59,6 +59,22 @@ exports.handler = async (payload) => {
 }
 ```
 
+## List of choice operators
+
+* ==
+* ===
+* !=
+* <
+* >
+* <=
+* >=
+* isString
+* isNumber
+* isBoolean
+* isTrue
+* isFalse
+* isNull
+
 
 ## CLI
 
