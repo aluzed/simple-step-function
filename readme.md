@@ -34,7 +34,6 @@ In `jobs` folder, create a subfolder with a `config.json` file :
 }
 ```
 
-
 ## Resolver file
 
 In your custom job folder (ex : `jobs/myjob`), create a  `functions` folder, then add your js script : 
@@ -59,7 +58,7 @@ exports.handler = async (payload) => {
 }
 ```
 
-## List of choice operators 
+## List of choice operators
 
 * ==
 * ===
