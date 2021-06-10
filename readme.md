@@ -59,7 +59,7 @@ exports.handler = async (payload) => {
 }
 ```
 
-## List of choice operators
+## List of choice operators 
 
 * ==
 * ===
