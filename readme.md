@@ -1,7 +1,7 @@
 
 # Simple Step Functions
 
-Here is a simple step function-like framework that you can host. Each step generates a synchronous thread and return the result as a payload to the next step. You can return a result directly or a resolver if you want to create your custom function.
+Here is a simple step functions-like framework that you can host. Each step generates a synchronous thread and return the result as a payload to the next step. You can return a result directly or a resolver if you want to create your custom function.
 
 ## Supported types
 
