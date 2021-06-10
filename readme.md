@@ -65,10 +65,10 @@ exports.handler = async (payload) => {
 * ==
 * ===
 * !=
-* <
-* >
-* <=
-* >=
+* &lt;
+* &gt;
+* &lt;=
+* &gt;=
 * isString
 * isNumber
 * isBoolean
