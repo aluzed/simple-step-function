@@ -59,6 +59,7 @@ exports.handler = async (payload) => {
 }
 ```
 
+
 ## List of choice operators
 
 * ==
@@ -74,6 +75,7 @@ exports.handler = async (payload) => {
 * isTrue
 * isFalse
 * isNull
+
 
 
 ## CLI
